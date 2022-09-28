@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalo Spotify ka clone banate h..!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        alert(
+            "A Small Gesture!\n(Click on OK to skip this popup..)\n\nJust wanted to Thank Prerit Kotak for the motivation behind starting this and Ashish Shukla sir for clarifying my doubts.\nI was trully amazed🤩 by Prerit's work, so i also thought of giving it a try. Beginning was good but when started working on media query, i had to dig up a lot. I got stuck, then Ashish sir helped me in clarifying the issue. I am glad that i completed this one too. Thanks to you both once again..!! 😄\n(Click on OK button to see the practice-clone of Spotify, Thank you..!!)"
+        )
+    </script>
+
+
+    <div class="main-container">
+
+        <!-- left sub container started -->
+        <div class="left-sub-container">
+
+    <!-- the below small screen div is only for small screen - to display only the icons in the bottom -->
+            <div class="small-screen">
+                <i class="bi bi-house-door-fill"></i>
+                <i class="bi bi-search"></i>
+                <i class="bi bi-collection"></i>
+                <i class="bi bi-file-plus-fill"></i>
+                <i class="bi bi-envelope-open-heart-fill"></i>
+            </div>
+    <!-- the above small screen div is only for small screen - to display only the icons in the bottom -->
+            
+
+            <div class="nav-icons">
+                <div class="logo-container">
+                    <a href=""><img src="images/listen-on-spotify-white-logo.png" alt="" class="logo-img"></a>
+                </div>
+
+                <a href="" class="nav-icon"><i class="bi bi-house-door-fill"></i>&nbsp&nbsp&nbspHome</a>
+                <a href="" class="nav-icon"><i class="bi bi-search"></i>&nbsp&nbsp&nbspSearch</a>
+                <a href="" class="nav-icon"><i class="bi bi-collection"></i>&nbsp&nbsp&nbspYour Library</a>
+                <a href="" class="nav-icon"><i class="bi bi-file-plus-fill"></i>&nbsp&nbsp&nbspCreate Playlist</a>
+                <a href="" class="nav-icon"><i class="bi bi-envelope-open-heart-fill"></i>&nbsp&nbsp&nbspLiked Songs</a>
+            </div>
+
+
+            <!-- nav links for cookies and privacy -->
+
+            <div class="nav-links">
+                <a href="" class="nav-link">Cookies</a>
+                <a href="" class="nav-link">Privacy</a>
+                <a href="" class="nav-link"><i class="bi bi-arrow-down-circle-fill"></i>&nbsp&nbsp Install App </a>
+            </div>
+
+        </div>
+
+
+
+        <!-- right sub container started -->
+
+        <div class="right-sub-container">
+
+            <div class="header-section">
+                <!-- this header section is kept for fixed top position and tranparent background output -->
+            </div>
+
+
+
+            <!-- header container started - contains the left arrows and login icons-->
+            
+            <div class="header-container">
+                <div class="left-arrows">
+
+                    <div class="arrow">
+                        <i class="bi bi-chevron-left"></i>
+                    </div>
+
+                    <div class="arrow">
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="right-buttons">
+                    <div class="hd-btn hbtn1">Upgrade</div>
+
+                    <div class="hd-btn hbtn2">
+                        <i class="bi bi-person-circle"></i>
+                        <select class="login-btn">
+                            <option value="risabh">&nbspRisabh</option>
+                            <option value="account">Account</option>
+                            <option value="profile">Profile</option>
+                            <option value="upgrade">Upgrade to Premium</option>
+                            <option value="settings">Settings</option>
+                            <option value="logout" style="outline: none; border-top: 5px solid black; ">Log Out</option>
+                        </select>
+                    </div>
+                </div>
+            </div>  <!-- header container ends here -->
+
+            
+
+
+
+
+            <!-- body section starts  -->
+            
+            <div class="sections">  <!-- sections contain multiple each-section -->
+
+                <!-- 1st each-section starts here -->
+
+                <div class="each-section">
+                    <div class="section-head">
+                        <a href="" class="link-left">Shows to try</a>
+                        <a href="" class="seeall">See all</a>
+                    </div>
+
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/d3ae59a048dff7e95109aec18803f22bebe82d2f" alt="" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">The Joe Rogan Experience</h2>
+                                <p class="small-desc">Joe Rogan</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fbadbb8928793e6e74761c255" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Crime Spot - Idhu oru Rishipedia Podcast (Tamil)</h2>
+                                <p class="small-desc">Rishi</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fadead612fce9a9802ac667c4" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">The Ranveer Show</h2>
+                                <p class="small-desc">BeerBiceps</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <hr><!-- ------------------------------------------------------------------------- -->
+                                <!-- 2nd each-section starts here -->
+
+                <div class="each-section">
+                    <div class="section-head">
+                        <a href="" class="link-left">Featured Charts</a>
+                        <a href="" class="seeall">See all</a>
+                    </div>
+
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                    alt="" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Top Songs - Global</h2>
+                                <p class="small-desc">Your weekly update of the most played tracks right now - Global.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg"
+                                    alt="Top Songs - India" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Top Songs - India</h2>
+                                <p class="small-desc">Your weekly update of the most played tracks right now - India.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                    alt="Top 50 - Global" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Top 50 - Global</h2>
+                                <p class="small-desc">Your daily update of the most played tracks right now - Global.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                    alt="Top 50 - India" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Top 50 - India</h2>
+                                <p class="small-desc">Your daily update of the most played tracks right now - India.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                    alt="Top 50 - India" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Top 50 - India</h2>
+                                <p class="small-desc">Your daily update of the most played tracks right now - India.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <hr><!-- ------------------------------------------------------------------------- -->
+                            <!-- 3rd each-section starts here -->
+
+                <div class="each-section">
+                    <div class="section-head">
+                        <a href="" class="link-left">Try something else</a>
+                        <a href="" class="seeall">See all</a>
+                    </div>
+
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                    alt="" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">The Joe Rogan Experience</h2>
+                                <p class="small-desc">Joe Rogan</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fbadbb8928793e6e74761c255" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Crime Spot - Idhu oru Rishipedia Podcast (Tamil)</h2>
+                                <p class="small-desc">Rishi</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fadead612fce9a9802ac667c4" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">The Ranveer Show</h2>
+                                <p class="small-desc">BeerBiceps</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr><!-- ------------------------------------------------------------------------- -->
+                                    <!-- 4th each-section starts here -->
+
+
+                <div class="each-section">
+                    <div class="section-head">
+                        <a href="" class="link-left">Trending now</a>
+                        <a href="" class="seeall">See all</a>
+                    </div>
+
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-img-container circle-img">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                    alt="" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">The Joe Rogan Experience</h2>
+                                <p class="small-desc">Joe Rogan</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container circle-img">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fbadbb8928793e6e74761c255" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Crime Spot - Idhu oru Rishipedia Podcast (Tamil)</h2>
+                                <p class="small-desc">Rishi</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container circle-img">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fadead612fce9a9802ac667c4" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">The Ranveer Show</h2>
+                                <p class="small-desc">BeerBiceps</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container circle-img">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container circle-img">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <hr><!-- ------------------------------------------------------------------------- -->
+                            <!-- 5th each-section starts here -->
+
+                <div class="each-section">
+                    <div class="section-head">
+                        <a href="" class="link-left">Try something else</a>
+                        <a href="" class="seeall">See all</a>
+                    </div>
+
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                    alt="" class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">The Joe Rogan Experience</h2>
+                                <p class="small-desc">Joe Rogan</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fbadbb8928793e6e74761c255" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Crime Spot - Idhu oru Rishipedia Podcast (Tamil)</h2>
+                                <p class="small-desc">Rishi</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fadead612fce9a9802ac667c4" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">The Ranveer Show</h2>
+                                <p class="small-desc">BeerBiceps</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fcfd08c0936195b881fa9370b" alt=""
+                                    class="card-img">
+                            </div>
+                            <div class="text-container">
+                                <h2 class="h2-text">Naallanaa Murukku - The RJ Balaji Podcast</h2>
+                                <p class="small-desc">Spotify Studios</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer section starts here - contains audio -->
+
+        <div class="footer">
+            <div class="audio-container">
+                <p>Heyaa! Listen to one of my favourite songs below, hope you love it. Thank you..!!</p>
+                <audio src="audio/Raina - Fukrey Returns.mp3" controls muted loop></audio>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

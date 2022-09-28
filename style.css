@@ -1,35 +1,201 @@
-
 /* adding bootstrap icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 /* font family used through out the page */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
 
-*{
+
+/* making margin and padding of all that tags used here as zero,  */
+* {
     margin: 0;
     padding: 0;
 }
 
+
+/* ----------------------------------------------------------------- */
+
+/* css for spotify form page starts below */
+
+.logo-container-in-form{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 210px;
+    height: 85px;
+}
+.logo-img-in-form{
+    width: 100%;
+}
+
+.spotify-form{
+    margin: 25px auto;
+    width: 450px;
+    height: 110vh;
+    box-sizing: border-box;
+}
+
+.form-top{
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.continue-btn{
+    width: 100%;
+    height: 45px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: gray;
+}
+.continue-btn:nth-child(2){
+    background-color: rgb(72, 92, 207);
+    color: antiquewhite;
+    border: none;
+}
+
+.continue-btn:nth-child(3){
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    border: none;
+}
+
+.m-10{
+    margin-top: 10px;
+}
+
+.hr-box{
+    position: relative;
+}
+
+.or{
+    position: absolute;
+    left: 44%;
+    top: -7px;
+    width: 40px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.form-bottom{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+form p{
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+.inp{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+
+.inp::placeholder{
+    font-size: 14px;
+}
+.continue-btn:hover, .inp:hover{
+    border: 1px solid black;
+}
+
+.form-bottom a{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.login{
+    background-color: rgba(85, 230, 30, 0.85);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    /* size: 30px; */
+    height: 10px;
+    /* background-color: blueviolet; */
+}
+span{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.para{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* media querydefined for form for mobile view */
+
+@media (max-width: 450px) {
+    .logo-container-in-form{
+        width: auto;
+    }
+    .spotify-form{
+        width: auto;
+        margin: 10px;
+    }
+
+    .logo-container-in-form{
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 170px;
+        /* height: 5px; */
+    }
+
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+/* css for spotify main page starts below */
+
 /* css for main container */
 
-.main-container{
+.main-container {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
 }
 
 
 /* css for left-sub-container */
 
-.left-sub-container{
-    /* width: 18%; */
+.left-sub-container {
     width: 220px;
-    height: 84%;
+    height: 88%;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -37,24 +203,28 @@ body{
     position: fixed;
 }
 
-.nav-icons{
+.small-screen {
+    display: none;
+}
+
+.nav-icons {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.logo-container{
+.logo-container {
     width: 100%;
     height: 40%;
 }
 
-.logo-img{
+.logo-img {
     width: 100%;
     object-fit: cover;
     transform: translateX(-14px);
 }
 
-.nav-icon{
+.nav-icon {
     margin-top: 15px;
     margin-left: 30px;
     text-decoration: none;
@@ -63,76 +233,87 @@ body{
     font-weight: 600;
 }
 
-.nav-icon:hover{
+.nav-icon:hover {
     color: bisque;
+    transition: all .6s;
 }
 
 
-.nav-links{
+/* css for cookies and privacy */
+.nav-links {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 19px;
 }
 
-.nav-link{
+.nav-link {
     margin-top: 10px;
     margin-left: 30px;
     text-decoration: none;
     color: rgb(92, 91, 89);
     font-size: 14px;
     font-weight: 700;
+    transition: all .6s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: bisque;
     text-decoration: underline;
+}
+
+.nav-link:nth-child(3){
+    font-size: 16px;
+    padding-left: 18px;
+}
+
+.nav-link:nth-child(3):hover{
+    text-decoration: none;
 }
 
 
 
 /* css for right-sub-container */
-
-.right-sub-container{
-    width: 82%;                /* width: 1006px; */
+.right-sub-container {
+    /* width: auto; */    
+    /* change in width is made because after deploying the website, in the right side of screen there were white space - to avoid that, i used width as 86%. 86% is the remaining part of the screen after left-sub-container */
+    width: 86%;
     height: auto;
-    background-color: rgb(12, 10, 10);
+    background-color: rgba(12, 10, 10);
     margin-left: 220px;
-    /* margin-left: 18%; */
-    /* padding-right: 10%; */
-
 }
 
-.header-section{
-    /* width: 1000px; */
-    width: 82%;
-    height:12%;
-    background-color: rgba(0, 0, 0, 0.6);
+
+/* this header section is kept for fixed top position and tranparent background output */
+.header-section {
+    /* width: 1006px; */
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
-    /* right: 0%; */
+}
+
+/* header container started - contains the left arrows and login icons */
+.header-container {
+    width: auto;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
-    margin: 0 auto;
-    /* gap: 50%; */
-    /* padding: 0 20px; */
-    /* margin: 0 2.5%; */
+    padding: 0 30px;
     box-sizing: border-box;
-    z-index: 1;
+    position: sticky;
+    top: 0;
 }
 
-.left-arrows{
+.left-arrows {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    width: 70px;
-    position: relative;
-    /* background-color: aqua; */
-
+    width: auto;
+    gap: 15px;
 }
 
-.arrow{
+.arrow {
     color: white;
     border-radius: 50%;
     background-color: black;
@@ -141,24 +322,21 @@ body{
     cursor: not-allowed;
 }
 
+.arrow:hover {
+    cursor: not-allowed;
+}
 
-.right-buttons{
+.right-buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 220px;
-    /* width: 24%; */
-    /* height: 50%; */
-    /* background-color: brown; */
-    /* margin-right: 20px; */
-    /* margin-right: 5%; */
+    width: auto;
     position: relative;
     gap: 22px;
-    box-sizing: border-box;
 }
-.hd-btn{
+
+.hd-btn {
     border-radius: 50px;
-    /* width:100px; */
     color: white;
     border: 1px solid white;
     background-color: black;
@@ -171,86 +349,75 @@ body{
     align-items: center;
 }
 
-.hbtn1:hover{
+.hbtn1:hover {
     transform: scale(1.02);
     border: 1.8px solid white;
 }
 
-.hbtn2{
+.hbtn2 {
     border: none;
-    /* width: 10px; */
     box-sizing: border-box;
 }
 
-.hbtn2:hover{
-    /* transform: scale(1.02);
-    border: 1.8px solid white; */
-    border: 1px solid rgb(44, 43, 43);
+.hbtn2:hover {
+    border: 2px solid rgb(44, 43, 43);
     background-color: rgb(44, 43, 43);
 }
 
-.login-btn{
+.login-btn {
     width: 74px;
-    /* height: inherit; */
     border: none;
     background-color: rgba(0, 0, 0, 0);
     color: white;
     box-sizing: border-box;
 }
 
-option{
+option {
     background-color: black;
 }
 
-option:first-child{
+option:first-child {
     display: none;
 }
 
 
 
+
 /* css for body starts here */
-
-.sections{
-    /* margin-top: 7%; */
-    margin: 70px auto;
-    margin-bottom: 10%;
-    /* padding: 10px; */
-    /* background-color: rgba(0, 255, 255, 0.418); */
+.sections {
+    margin-bottom: 100px;
     height: auto;
-    width: 95%;
+    width: auto;
     box-sizing: border-box;
 }
 
-.each-section{
-    /* padding: 30px; */
+.each-section {
     padding: 4%;
-
-    width: 100%;
+    width: auto;
     text-align: center;
-    margin: 4% auto;
+    margin: 0 auto;
     box-sizing: border-box;
-    /* background-color: blueviolet; */
 }
-.section-head{
+
+
+.section-head {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     height: 50px;
     width: 100%;
     text-align: center;
-    /* background-color: blue; */
     text-align: center;
     margin: 0 auto;
 }
 
-.link-left{
+.link-left {
     color: white;
     font-size: 20px;
     font-weight: 700;
-    /* margin-right: 82%; */
 }
 
-.seeall{
+.seeall {
     font-size: 14px;
     color: white;
     font-weight: 700;
@@ -258,30 +425,12 @@ option:first-child{
 
 
 
-/* css for card containers */
-
-.cards-container{
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    width: 100%;
-    /* background-color: rgba(8, 105, 105, 0.74); */
-    margin: 0 auto;
-}
+/* css for .card-containers and .card is defined in media queries below depending on the screen size */
 
 
 
-/* css for cards*/
-
-.card{
-    width:18%;
-    /* height: 60%; */
-    background-color: rgb(24, 23, 23);
-    border-radius: 8px;
-}
-
-
-.card-img-container{
+/* css for images used in the cards */
+.card-img-container {
     width: 81%;
     height: auto;
     border-radius: 8px;
@@ -289,63 +438,61 @@ option:first-child{
     margin: 12px auto;
 }
 
-.card-img{
+.card-img {
     width: 100%;
     border-radius: 8px;
 }
 
-.circle-img{
+
+/* 4th eachsection cantains circle images */
+.circle-img {
     border-radius: 50%;
 }
 
-.circle-img .card-img{
+.circle-img .card-img {
     border-radius: 50%;
 }
 
-
-.text-container{
+/* css for texts in bottom of every card */
+.text-container {
     margin: 12px auto;
-    /* background-color: rgb(187, 124, 124); */
-    /* width: 150px; */
     width: 80%;
     height: auto;
 
 }
-.h2-text{
+
+.h2-text {
     /* box-sizing: border-box; */
     color: white;
     font-size: 20px;
-    white-space: nowrap; 
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.small-desc{
+.small-desc {
     color: gray;
     font-size: 15px;
     padding: 5px 0;
     font-weight: 600;
-    white-space: nowrap; 
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.card:hover{
+/* css for what happens on hovering over card */
+.card:hover {
     background-color: rgb(46, 43, 43);
 }
 
 
 
-
-
-/* css for footer section */
-
-
-.footer{
+/* css for footer section that contains audio */
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 16%;
+    height: 90px;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -353,74 +500,287 @@ option:first-child{
     background-color: rgb(24, 23, 23);
 }
 
-.audio-container{
+.audio-container {
     width: auto;
     text-align: center;
     height: 60%;
 }
 
-.audio-container p{
+.audio-container p {
     color: gray;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-.audio-container audio{
+.audio-container audio {
     width: 90%;
     height: 50%;
 }
 
+
+/* to change the bbackground color of default audio icon, using -webkit functionality - Googled */
 .audio-container audio::-webkit-media-controls-panel {
     background-color: #535052a2;
-    /* border: 2px solid black; */
-  }
-
-
-
-  /* trying to add some media queries */
-
-  @media (max-width:916px){
-    .arrow:nth-child(2){
-        display: none;
-    }
-
-    .hd-btn:nth-child(1){
-        display: none;
-    }
-
-    .login-btn{
-        width: 22px;
-        /* display: none; */
-    }
-
-    .hd-btn{
-        padding: 3px;
-        width: 40px;
-    }
-    .right-buttons{
-        width: auto;
-        /* background-color: blueviolet; */
-    }
-    
-    .card:last-child{
-        display: none;
-    }
-    .card{
-        width: 20%;
-    }
-
-    
 }
 
 
 
+/* media queries used in this proj are below */
+/* for screen size greater than 912px */
+/* for screen size between 760px - 912px */
+/* for screen size between 622px - 760px */
+/* for screen size between 450px - 622px */
+/* media query for small screen - less than 450px */
+
+/* for screen size greater than 912px */
+@media (min-width: 912px) {
+
+    .card {
+        width: 200px;
+        background-color: rgb(24, 23, 23);
+        border-radius: 8px;
+        /* flex-grow: 1; */
+        margin: 4px;
+
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: auto;
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 266px;
+        overflow: hidden;
+    }
+}
+
+/* for screen size between 760px - 912px */
+@media (max-width: 912px) and (min-width: 760px) {
+
+    .hd-btn:first-child {
+        display: none;
+    }
+
+    .card {
+        width: 150px;
+        background-color: rgb(24, 23, 23);
+        border-radius: 8px;
+        margin: 4px;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: auto;
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 225px;
+        overflow: hidden;
+    }
+}
+
+
+/* for screen size between 622px - 760px */
+@media (min-width: 622px) and (max-width: 760px) {
+
+    .hd-btn:first-child {
+        display: none;
+    }
+
+    .card {
+        width: 170px;
+        background-color: rgb(24, 23, 23);
+        border-radius: 8px;
+        margin: 4px;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: auto;
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 240px;
+        overflow: hidden;
+    }
+}
 
 
 
+/* for screen size between 450px - 622px */
+@media (min-width: 450px) and (max-width: 622px) {
 
+    body{
+        overflow-x: hidden;
+    }
 
+    .header-section {
+        width: 100%;
+    }
 
+    .hd-btn:nth-child(2) {
+        width: 50px;
+    }
 
+    .login-btn {
+        width: 22px;
+    }
 
+    .right-buttons {
+        width: auto;
+    }
 
+    .right-buttons i {
+        font-size: 22px;
+    }
+
+    .hd-btn {
+        padding: 3px;
+        width: 40px;
+    }
+
+    .hd-btn:first-child,
+    .arrow:last-child {
+        display: none;
+    }
+
+    .card {
+        width: 170px;
+        background-color: rgb(24, 23, 23);
+        border-radius: 8px;
+        margin: 4px;
+    }
+
+    /* .card:nth-child(3), .card:nth-child(4), .card:nth-child(5){
+        display: none; */
+    /* } */
+
+    .cards-container{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 390px;
+        margin: 0;
+        box-sizing: border-box;
+        height: 240px;
+        overflow: hidden;
+    }
+
+    .footer{
+        width: 622px;
+    }
+
+    .audio-container p {
+        color: gray;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+/* media query for small screen - less than 450px */
+@media (max-width: 450px) {
+
+    .right-sub-container{
+        width: auto;
+    }
+
+    .header-container {
+        padding: 0 18px;
+    }
+
+    .login-btn {
+        width: 22px;
+    }
+
+    .right-buttons {
+        width: auto;
+    }
+
+    .hd-btn:nth-child(2) {
+        width: 50px;
+    }
+
+    .right-buttons i {
+        font-size: 22px;
+    }
+
+    .hd-btn {
+        padding: 3px;
+        width: 40px;
+    }
+
+    .hd-btn:first-child,
+    .arrow:last-child {
+        display: none;
+    }
+
+    .left-sub-container {
+        position: fixed;
+        bottom: -10px;
+        width: 100%;
+        height: 55px;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .small-screen {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+        color: rgb(92, 91, 89);
+        height: 100%;
+    }
+
+    .small-screen i:hover {
+        color: bisque;
+    }
+
+    .right-sub-container {
+        margin-left: 0;
+    }
+
+    .sections {
+        margin-bottom: 70px;
+    }
+    .card {
+        width: 270px;
+        background-color: rgb(24, 23, 23);
+        border-radius: 8px;
+        margin: 4px;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: auto;
+        margin: 0;
+        box-sizing: border-box;
+        height: 315px;
+        overflow: hidden;
+    }
+
+    hr {
+        color: rgb(92, 91, 89);
+    }
+
+    .footer {
+        display: none;
+    }
+}
 
